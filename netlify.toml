@@ -1,0 +1,6 @@
+# Static site: the whole app is the single HTML file `sv` (no framework,
+# no package manager, no dependencies). The build step publishes it as
+# index.html so it is served at `/` with an HTML content type.
+[build]
+  command = "mkdir -p dist && cp sv dist/index.html"
+  publish = "dist"
